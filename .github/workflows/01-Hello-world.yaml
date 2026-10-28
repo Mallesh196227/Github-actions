@@ -1,16 +1,10 @@
-```yaml
 name: Hello World Workflow
-
-on:
-  push:
-    branches:
-      - main
-
+on:[push]
 jobs:
-  hello-world:
+  hello:
     runs-on: ubuntu-latest
 
     steps:
       - name: Print Hello World
         run: echo "Hello World from GitHub Actions!"
-```
+
